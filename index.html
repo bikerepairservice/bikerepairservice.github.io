@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Repair Man</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center mt-5 mb-3">
+        <i class="fa fa-motorcycle fa-3x text-danger" aria-hidden="true"></i>
+      </div> 
+      <h3 class="font-weight-bold text-center  mb-4 text-center">Pre Registration - Bike Service Mechanics</h2>
+        <p class="text-center mb-3 col-12 col-md-8 mx-auto">We are currently building an app that will help Bike mechanic to find customers as per their location. Are you interested to be part of our Bike Mechanic Network?</p>
+        <p class="text-center">Enter the details below to get started</p> 
+
+        <div class="row">
+
+          <div class="col-12 col-md-8 mx-auto ">
+            <div class="card shadow p-4 card-3">
+
+            <form class="intrest-form">
+              <div class="row">
+                <div class="col-12 col-md-6"> 
+                  <label for="">Name</label><br />
+                  <input class="name form-control" type="text" placeholder="name" required /><br />
+                </div>
+              <div class="col-12 col-md-6">
+                <label for="">Email</label><br />
+                <input class="email form-control" type="email" placeholder="email" required /><br />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="">Phone</label><br />
+                <input class="phone form-control" type="phone" placeholder="Phone" required /><br />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="">Location</label><br />
+                <input class="location form-control" type="text" placeholder="Eg Palarivattom, Kochi" required /><br />
+              </div>
+              <div class="col-12 col-md-12">
+                <label for="">Enter Brands and model of bikes you have repaired</label><br />
+                <textarea required
+                  class="model form-control"
+                  name="model"
+                  id=""
+                  cols="10"
+                  rows="3"
+                  placeholder="Brand and Model"
+                ></textarea
+                ><br />
+
+              </div>
+            </div>   
+             <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn-success ">Submit</button>
+             </div>
+           </form>
+          </div>
+        </div>
+
+      </div>
+ <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+    <br>
+        <h5 class="modal-title" id="exampleModalLongTitle">Success!          
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center"><i class="fa fa-thumbs-up fa-2x text-success" aria-hidden="true"></i></div>
+
+          <p class="text-center">Thank you for showing interest. <br>We will get back to you soon.</p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+    
+     
+    </div>
+    
+ 
+  
+ 
+ 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+    <script src="app.js"></script>
+    <style>
+      body{
+  font-family: 'Open Sans', sans-serif  !important;
+  background-color: #f5f8fd;
+}
+.card{
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+}
+ 
+    </style>
+
+  </body>
+</html>
